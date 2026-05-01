@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message Display</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body class="display-body">
+    <main class="display-stage" aria-live="polite">
+      <canvas id="visualizerCanvas" class="visualizer-canvas" aria-hidden="true"></canvas>
+      <button id="audioPrompt" class="audio-prompt" type="button">
+        <span id="audioPromptTitle">Enable audio visualizer</span>
+        <small id="audioPromptDetail">Uses this device's mic or audio input</small>
+      </button>
+
+      <section id="featuredMessage" class="featured-message">
+        <p class="empty-display">Waiting for approved messages</p>
+      </section>
+    </main>
+
+    <script src="/public/display.js" defer></script>
+  </body>
+</html>

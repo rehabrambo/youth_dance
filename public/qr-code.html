@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body class="page qr-only-page">
+    <main class="qr-only-layout">
+      <section class="qr-intro-panel" aria-labelledby="qr-title">
+        <div class="qr-heading">
+          <p class="eyebrow">Audience entry</p>
+          <h1 id="qr-title">Scan to send a message</h1>
+          <p class="qr-caption">Your message will be reviewed before it appears on the wall.</p>
+        </div>
+
+        <img id="qrImage" class="qr-image qr-page-image" alt="QR code for sending a message to the wall">
+      </section>
+    </main>
+
+    <script src="/public/qr-code.js" defer></script>
+  </body>
+</html>

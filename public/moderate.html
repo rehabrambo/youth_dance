@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moderation</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body class="page">
+    <header class="topbar">
+      <a class="brand" href="/">Message Wall</a>
+      <nav class="topnav" aria-label="Views">
+        <a href="/qr-code">QR Code</a>
+        <a href="/">Submit</a>
+        <a href="/display">Display</a>
+      </nav>
+    </header>
+
+    <main class="moderation-layout">
+      <section class="queue-panel" aria-labelledby="pending-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Moderation</p>
+            <h2 id="pending-title">Pending</h2>
+          </div>
+          <span id="pendingCount" class="count-pill">0</span>
+        </div>
+        <div id="pendingList" class="message-list"></div>
+      </section>
+
+      <section class="history-panel" aria-labelledby="approved-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">On display</p>
+            <h2 id="approved-title">Approved</h2>
+          </div>
+          <span id="approvedCount" class="count-pill">0</span>
+        </div>
+        <div id="approvedList" class="message-list compact-list"></div>
+      </section>
+
+      <section class="history-panel" aria-labelledby="rejected-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Archived</p>
+            <h2 id="rejected-title">Rejected</h2>
+          </div>
+          <span id="rejectedCount" class="count-pill">0</span>
+        </div>
+        <div id="rejectedList" class="message-list compact-list"></div>
+      </section>
+    </main>
+
+    <script src="/public/moderate.js" defer></script>
+  </body>
+</html>

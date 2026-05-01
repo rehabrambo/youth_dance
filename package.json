@@ -1,0 +1,19 @@
+{
+  "name": "local-message-wall",
+  "version": "1.0.0",
+  "description": "Local network QR message wall with moderation and a live display.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "local-network",
+    "qr",
+    "moderation",
+    "message-wall"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Send a Message</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body class="page page-submit">
+    <main class="submit-layout">
+      <section class="composer-panel" aria-labelledby="composer-title">
+        <p class="eyebrow">Live queue</p>
+        <h1 id="composer-title">Send a message</h1>
+        <form id="messageForm" class="message-form">
+          <label>
+            <span>Name</span>
+            <input id="nameInput" name="name" type="text" maxlength="40" autocomplete="name" placeholder="Optional">
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea id="messageInput" name="text" maxlength="240" rows="6" required placeholder="Type your message"></textarea>
+          </label>
+
+          <div class="form-footer">
+            <span id="characterCount" class="character-count">0 / 240</span>
+            <button class="primary-button" type="submit">Send</button>
+          </div>
+          <p id="formStatus" class="status-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/public/submit.js" defer></script>
+  </body>
+</html>

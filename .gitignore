@@ -1,0 +1,3 @@
+data/messages.json
+*.log
+node_modules/

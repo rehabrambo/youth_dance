@@ -41,7 +41,7 @@ function renderDisplay() {
   if (!messages.length) {
     const empty = document.createElement("p");
     empty.className = "empty-display";
-    empty.textContent = "Waiting for approved messages";
+    empty.textContent = "";
     featuredMessage.append(empty);
     return;
   }
